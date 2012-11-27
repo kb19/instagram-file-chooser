@@ -1,18 +1,48 @@
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.hero-unit {
+    padding: 30px;
+}
+.images img {
+	opacity: 0.7;
+}
+.images img:hover {
+	cursor: pointer;
+	opacity: 1.0;
+}
+.prev {
+	float: left;
+}
+.next {
+	float: right;
+}
+.navigation {
+	clear: both;
+	margin-top: 15px;
+}
+.images div
+{
+	/*width: 600px;
+	float: left;*/
+}
+.image-content {
+	overflow: hidden;
+	position: relative;
+	width: 600px;
+	height: 600px;
+}
+.image-content .images {
+	clear: both;
+	position: absolute;
+	width: 1200px;
+	margin-top: 39px;
+}
+.image-content .images div {
+	float: left;
+	width: 600px;
+}
 
 
 

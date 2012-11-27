@@ -123,7 +123,9 @@ class InstagramUploader
         $chooser_template = file_get_contents(self::TEMPLATE_PATH . '/img_chooser.html');
 
         $mustache   = new Mustache();        
-        $view       = $mustache->render($chooser_template, $data);
+        $header     = file_get_contents(self::TEMPLATE_PATH . 'header.html');
+        $footer     = file_get_contents(self::TEMPLATE_PATH . 'footer.html');
+        $view       = $mustache->render($chooser_template, $data, array('header' => $header, 'footer' => $footer));
 
         echo $view;
     }
