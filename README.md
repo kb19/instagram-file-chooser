@@ -1,4 +1,4 @@
-This code allows you to embed an instagram file chooser into your web page / web app. It sets up a 'login with instagram' button on the main page. When a user clicks it, a new window opens up prompting them to log in with instagram and then displays a 'slider' of all their instagram images. When they click on an instagram image, that image's link is sent back to the parent window to be displayed (or enetered in a form, etc). 
+This code allows you to embed an Instagram file chooser into your web page / web app. It sets up a 'login with Instagram' button on the main page. When a user clicks it, a new window opens up prompting them to log in with instagram and then displays a 'slider' of all their instagram images. When they click on an instagram image, that image's link is sent back to the parent window to be displayed (or enetered in a form, etc). 
 
 To use this app, you need to create an app/account at <a href="http://instagram.com/developer/" target="_">the Instagram API page</a>.
 
@@ -6,7 +6,7 @@ To use this app, you need to create an app/account at <a href="http://instagram.
 After a user signs in with Instagram, we hit an endpoint on the Instagram API that gives us the # most recent user photos. With that return 1 'page' of photos to the page, and cache the next 'page' of the slider via an AJAX requqest to next.php. Everytime the 'next' button is clicked, we move to the next (cached) page, and load the page after it. If a user has relatively few photos, this can be a cumbersome way to do it since we could just grab all their photos in one request, but if the user has a tonne of photos that could amount to a lot of unnecessary overhead.
 
 <h3>Application Flow</h3>
-index.php -> sign in with instagram -> redirect.php, render template img_chooser.html -> grab user's pictures, process in main.js -> hit next.php via AJAX to retrieve the next page of pictures.
+index.php -> sign in with Instagram -> redirect.php, render template img_chooser.html -> grab user's pictures, process in main.js -> hit next.php via AJAX to retrieve the next page of pictures.
 
 <h3>Important files</h3>
 <h4>lib/instagram.php:</h4>  InstagramUploader class. Handles rendering the img_chooser.html template as well as connecting to the 
