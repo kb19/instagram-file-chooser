@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	/** MAIN PAGE CODE **/
 	$('.instagram-signin').on('click', function(){
-        var redirect_url    = 'http://www.instagramuploader.dev/redirect.php';
-        var client_id       = 'da3f06fe4a264c8e9076eaf157798950';
+        var redirect_url    = 'GET VALUE FROM INSTAGRAM API';
+        var client_id       = 'GET VALUE FROM INSTAGRAM API';
         var url = 'https://api.instagram.com/oauth/authorize/?client_id=' + client_id + '&redirect_uri=' + redirect_url + '&response_type=code';
         
         window.open(url, "Instagram", "menubar=1,resizable=1,width=1000,height=600");
