@@ -17,12 +17,12 @@ index.php -> sign in with Instagram -> redirect.php, render template img_chooser
 <h4>next.php:</h4>    This script calls a static method in the InstagramUploader class that gets the next 'page' of pictures. This 
             script serves as an endpoint for the next page ajax request in main.js.
 <h4>redirect.php:</h4>  Creates and initializes an instance of the InstagramUploader class. The client id, client secret and 
-            redirect url need to be set here.
+            redirect url need to be set here. <strong>*Set Instagram API details here</strong>
             
 <h4>js/main.js:</h4>  Contains the javascript code for the plugin. It's split into 2 main sections: main page section (index.php) 
           and the file chooser page section (redirect.php). The main page section just contains a listener for handling 
           the instagram login / pop-up window. The section for the file chooser contains the logic and dom manipulation 
-          code for presenting the pictures and handling the ui experience. 
+          code for presenting the pictures and handling the ui experience. <strong>*Set Instagram API details here</strong>
           
 <h4>templates/img_chooser.html:</h4>  This is the template that is rendered by the redirect.php script.
 
